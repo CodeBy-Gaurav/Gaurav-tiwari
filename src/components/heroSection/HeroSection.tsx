@@ -95,10 +95,6 @@ export default function HeroSection() {
               <span className="hero-status-cog">
                 <LuCog />
               </span>
-              <span className="hero-stores-pill">
-                <span className="stores-pulse-dot" />
-                <span>10+ Stores Live</span>
-              </span>
             </div>
 
             <div className="hero-meta-strip">
@@ -126,7 +122,7 @@ export default function HeroSection() {
           <li className="hero-bio-row">
             <span className="bio-bullet-dot">●</span>
             <span className="bio-text">
-              Developer of <strong className="bio-highlight">Optical Manager</strong>, a retail SaaS actively powering <strong className="bio-highlight">10+ stores</strong> across Delhi NCR.
+              Creator of <strong className="bio-highlight">Optical Manager</strong>, an enterprise retail ERP &amp; SaaS powering optical retail businesses with multi-branch inventory and clinical workflows.
             </span>
           </li>
           <li className="hero-bio-row">

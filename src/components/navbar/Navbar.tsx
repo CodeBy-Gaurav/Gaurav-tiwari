@@ -32,12 +32,12 @@ export default function Navbar() {
           </li>
           <li>
             <NavLink
-              to="/uses"
+              to="/experience"
               className={({ isActive }) =>
                 `nav-link ${isActive ? 'active' : ''}`
               }
             >
-              Uses
+              Experience
             </NavLink>
           </li>
           <li>

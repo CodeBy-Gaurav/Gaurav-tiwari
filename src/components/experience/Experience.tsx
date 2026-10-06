@@ -24,7 +24,7 @@ const experiences: ExperienceItem[] = [
     location: 'Delhi NCR, India',
     description: [
       'Contributed to core product engineering by architecting scalable, production-ready full-stack web applications and collaborating with senior engineers.',
-      'Built and deployed Optical Manager, a multi-tenant SaaS platform actively used by 5+ optical retail stores across Delhi NCR for inventory, billing, OD/OS ophthalmic clinical records, and store workflows.',
+      'Architected and deployed Optical Manager, an enterprise multi-tenant retail ERP & SaaS platform for optical businesses, streamlining real-time inventory synchronization, GST billing, and OD/OS ophthalmic clinical records.',
       'Delivered full-stack e-commerce and client solutions end-to-end, integrating product catalogs, payment pipelines, and high-performance React UI components.',
     ],
     links: [{ url: 'https://www.opticalmanager.in/' }],
@@ -64,7 +64,7 @@ export default function Experience() {
   };
 
   return (
-    <section className="experience-section">
+    <section className="experience-section" id="experience">
       <SectionTitle>Work Experience</SectionTitle>
 
       <div className="timeline-container">

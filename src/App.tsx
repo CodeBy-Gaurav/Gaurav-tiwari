@@ -10,6 +10,7 @@ import './App.css';
 // Lazy-loaded pages
 const Home = lazy(() => import('./pages/home/Home'));
 const ProjectsLayout = lazy(() => import('./pages/projects/ProjectsLayout'));
+const ExperienceLayout = lazy(() => import('./pages/experience/ExperienceLayout'));
 const UsesLayout = lazy(() => import('./pages/uses/UsesLayout'));
 const ResumeLayout = lazy(() => import('./pages/resume/ResumeLayout'));
 const BlogLayout = lazy(() => import('./pages/blogs/BlogLayout'));
@@ -28,7 +29,8 @@ export default function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/home" element={<Navigate to="/" replace />} />
                 <Route path="/projects" element={<ProjectsLayout />} />
-                <Route path="/uses" element={<UsesLayout />} />
+                <Route path="/experience" element={<ExperienceLayout />} />
+                <Route path="/uses" element={<Navigate to="/experience" replace />} />
                 <Route path="/resume" element={<ResumeLayout />} />
                 <Route path="/blogs" element={<BlogLayout />} />
                 <Route
