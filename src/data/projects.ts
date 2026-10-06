@@ -32,29 +32,43 @@ export const featuredProjects: ProjectData[] = [
     live: 'https://www.opticalmanager.in/',
   },
   {
-    banner: '/images/projects/project2.png',
-    name: 'AI Learning Platform',
+    banner: '/images/projects/ai-course-generator.png',
+    name: 'LearnGen AI — Video Courses',
     badgeLeft: 'Gemini AI Powered',
     badgeRight: 'SAAS PLATFORM 🚀',
     locked: true,
-    desc: 'Full-stack AI course generator producing structured, multi-chapter video courses from prompts using Gemini AI and YouTube API, featuring 8x lower generation latency.',
+    desc: 'Turn any topic into a complete AI video course in seconds with structured curriculums, lesson notes, and curated YouTube video masterclasses powered by Gemini AI.',
     tech: ['TypeScript', 'Next.js', 'React', 'Gemini AI', 'PostgreSQL', 'Drizzle ORM', 'Clerk Auth'],
     github: 'https://github.com/CodeBy-Gaurav/ai-course-generator',
     live: 'https://ai-course-generator-sigma-flax.vercel.app/',
   },
   {
-    banner: '/images/projects/project3.png',
-    name: 'Ask AI Documentation System',
-    badgeLeft: 'Semantic Search',
-    badgeRight: 'RAG PIPELINE ⚡',
+    banner: '/images/projects/broadcast-manager.png',
+    name: 'Broadcast Manager',
+    badgeLeft: '100,000 / day Tier',
+    badgeRight: 'MARKETING SAAS ⚡',
     locked: true,
-    desc: 'Production-grade RAG system engineered with Flask, Ollama, and vector embeddings for contextual semantic query resolution over developer guides and technical documentation.',
-    tech: ['Python', 'Flask', 'Ollama', 'Vector DB', 'ChromaDB', 'Postman', 'Git'],
-    github: 'https://github.com/CodeBy-Gaurav',
+    desc: 'High-throughput WhatsApp marketing & recall platform for OpticalManager featuring BullMQ queue orchestration, Baileys socket engine, dynamic template parsing, and Cloudflare R2 storage.',
+    tech: ['TypeScript', 'Node.js', 'Next.js', 'Redis', 'BullMQ', 'Socket.io', 'Cloudflare R2'],
+    github: 'https://github.com/opticalmanager/broadcast-manager',
+    live: 'https://broadcast.opticalmanager.in/',
   },
   {
+    banner: '/images/projects/ai-documentation-assistant.jpg',
+    name: 'AI Documentation Assistant',
+    badgeLeft: 'Semantic Vector RAG',
+    badgeRight: 'INFRASITY INTERNSHIP ⚡',
+    locked: true,
+    desc: 'Production-grade RAG assistant built with Llama 3.2, Flask, and vector embeddings to answer queries over complex technical docs. Contributed as part of my internship at Infrasity.',
+    tech: ['Python', 'Flask', 'Llama 3.2', 'Ollama', 'Vector DB', 'ChromaDB', 'Postman'],
+    github: 'https://github.com/Infrasity-Labs/growth-marketing-playbooks/tree/main/ai-documentation-assistant',
+  },
+];
+
+export const additionalProjects: ProjectData[] = [
+  {
     banner: '/images/projects/project4.png',
-    name: 'Optical Store POS & WhatsApp Terminal',
+    name: 'Optical POS & Store Terminal',
     badgeLeft: 'Store POS Terminal',
     badgeRight: 'DESKTOP CLIENT 💻',
     locked: true,
@@ -62,9 +76,6 @@ export const featuredProjects: ProjectData[] = [
     tech: ['Electron', 'TypeScript', 'Node.js', 'Tailwind CSS', 'REST APIs'],
     github: 'https://github.com/CodeBy-Gaurav',
   },
-];
-
-export const additionalProjects: ProjectData[] = [
   {
     banner: '/images/projects/project1.png',
     name: 'E-Commerce Storefront & Engine',
