@@ -1,0 +1,15 @@
+.click-spark-wrapper {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.click-spark-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 9999;
+}

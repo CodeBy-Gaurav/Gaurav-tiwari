@@ -1,0 +1,50 @@
+.loading-screen {
+  position: fixed;
+  inset: 0;
+  background-color: var(--bg-loading);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.loading-svg {
+  width: 72px;
+  height: 72px;
+}
+
+.loading-trace {
+  stroke-dasharray: 264;
+  stroke-dashoffset: 200;
+  animation: loading-flow 2.2s cubic-bezier(0.5, 0, 0.9, 1) infinite;
+  transform-origin: center;
+}
+
+@keyframes loading-flow {
+  0% {
+    stroke-dashoffset: 264;
+    transform: rotate(0deg);
+  }
+  50% {
+    stroke-dashoffset: 60;
+    transform: rotate(180deg);
+  }
+  100% {
+    stroke-dashoffset: 264;
+    transform: rotate(360deg);
+  }
+}
+
+.loading-text {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  letter-spacing: 0.5px;
+}

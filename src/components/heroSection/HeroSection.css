@@ -1,0 +1,490 @@
+.hero-section {
+  width: 100%;
+  margin: 32px auto 44px auto;
+}
+
+.hero-card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* === Profile Header Row === */
+.hero-profile-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.hero-avatar-frame {
+  position: relative;
+  width: 136px;
+  height: 136px;
+  flex-shrink: 0;
+  border-radius: 14px;
+  background-color: var(--bg-surface);
+  border: 1px solid #333333;
+  overflow: hidden;
+}
+
+.hero-avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-qr-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  background-color: rgba(11, 13, 14, 0.85);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  transition: all var(--duration-fast) ease;
+}
+
+.hero-qr-btn:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.hero-identity-col {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hero-name-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hero-name {
+  font-family: var(--font-ui);
+  font-size: 1.65rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.hero-heart-badge {
+  display: inline-flex;
+  align-items: center;
+  color: #e63946;
+  font-size: 1.15rem;
+  transform: rotate(-12deg);
+  filter: drop-shadow(0 0 6px rgba(230, 57, 70, 0.4));
+  animation: heart-beat 2.5s infinite;
+}
+
+.hero-username {
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  color: var(--text-tertiary);
+  transition: color var(--duration-fast) ease;
+  width: fit-content;
+}
+
+.hero-username:hover {
+  color: var(--text-primary);
+}
+
+.hero-status-line {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 2px;
+  font-family: var(--font-ui);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.hero-status-label {
+  color: #ffffff;
+}
+
+.hero-status-link {
+  color: #ffffff;
+  transition: opacity var(--duration-fast) ease;
+}
+
+.hero-status-link:hover {
+  opacity: 0.85;
+  text-decoration: underline;
+}
+
+.hero-status-cog {
+  display: inline-flex;
+  align-items: center;
+  color: var(--text-tertiary);
+  font-size: 0.9rem;
+  margin-left: 2px;
+}
+
+.hero-stores-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background-color: rgba(9, 29, 17, 0.95);
+  border: 1px solid rgba(2, 255, 103, 0.35);
+  color: #02ff67;
+  font-family: var(--font-ui);
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 2px 7px;
+  border-radius: var(--radius-pill);
+  margin-left: 6px;
+  letter-spacing: 0.2px;
+}
+
+.stores-pulse-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #02ff67;
+  box-shadow: 0 0 6px #02ff67;
+  animation: pulse-dot 1.2s infinite;
+}
+
+.hero-meta-strip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: var(--text-tertiary);
+  margin-top: 4px;
+}
+
+.meta-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.meta-icon {
+  font-size: 0.9rem;
+  color: var(--text-dim);
+}
+
+.meta-bullet {
+  color: var(--text-ghost);
+  font-weight: bold;
+}
+
+.meta-live-time {
+  font-family: var(--font-mono);
+  font-size: 0.84rem;
+  letter-spacing: 0.3px;
+  color: var(--text-tertiary);
+}
+
+/* === Bio Section === */
+.hero-bio-block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 6px 0;
+}
+
+.hero-bio-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--text-secondary);
+}
+
+.bio-bullet-dot {
+  color: #555555;
+  font-size: 0.75rem;
+  line-height: 1.8;
+  flex-shrink: 0;
+}
+
+.bio-text {
+  flex: 1;
+}
+
+.bio-highlight {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+/* === Dual Follow Cards (Dashed Borders) === */
+.hero-follow-cards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 6px;
+}
+
+.hero-dashed-card {
+  border: 1px dashed var(--border-default);
+  border-radius: 6px;
+  padding: 12px 14px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  transition: border-color var(--duration-fast) ease;
+}
+
+.hero-dashed-card:hover {
+  border-color: var(--border-hover);
+}
+
+.dashed-card-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.social-card-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.twitter-avatar {
+  background-color: #000000;
+  border: 1px solid #333333;
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+
+.linkedin-avatar {
+  background-color: #ffffff;
+  border: 1px solid #333333;
+  color: #0077b5;
+  font-size: 1.15rem;
+}
+
+.social-card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.social-card-name-row {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.social-card-name {
+  font-family: var(--font-ui);
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.verified-badge-icon {
+  color: #1d9bf0;
+  font-size: 0.95rem;
+}
+
+.social-card-handle {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-faint);
+}
+
+.social-card-status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+}
+
+.active-green-dot {
+  color: var(--accent-green-surface);
+  font-size: 0.65rem;
+}
+
+.social-action-btn {
+  font-family: var(--font-ui);
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 6px 16px;
+  border-radius: 6px;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--duration-fast) ease;
+}
+
+.twitter-btn {
+  background-color: var(--bg-surface-elevated);
+  border: 1px solid var(--border-default);
+  color: #ffffff;
+}
+
+.twitter-btn:hover {
+  border-color: var(--border-hover);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.linkedin-btn {
+  background-color: #5865f2;
+  border: 1px solid transparent;
+  color: #ffffff;
+}
+
+.linkedin-btn:hover {
+  background-color: #4752c4;
+}
+
+/* === Unified Segmented Bottom Dock === */
+.hero-action-dock-row {
+  display: flex;
+  margin-top: 4px;
+}
+
+.hero-dock-container {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: 8px;
+  padding: 4px 6px;
+  box-shadow:
+    0px 16px 32px -8px #0006,
+    0px 4px 8px -2px #0004,
+    inset 0px 0px 0px 1px #ffffff14,
+    inset 0px 1px 0px #ffffff33;
+}
+
+.dock-email-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--bg-surface-elevated);
+  border: 1px solid var(--border-default);
+  border-radius: 6px;
+  padding: 6px 12px;
+  color: #ffffff;
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all var(--duration-fast) ease;
+}
+
+.dock-email-button:hover {
+  border-color: var(--border-hover);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dock-email-icon {
+  font-size: 0.9rem;
+  color: var(--text-tertiary);
+}
+
+.dock-separator {
+  width: 1px;
+  height: 20px;
+  background-color: #333333;
+}
+
+.dock-icons-strip {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.dock-icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  border: 1px solid transparent;
+  transition: all var(--duration-fast) ease;
+}
+
+.dock-icon-btn:hover {
+  color: #ffffff;
+  background-color: var(--bg-surface-elevated);
+  border-color: var(--border-default);
+}
+
+/* === Responsive Breakpoints === */
+@media (max-width: 650px) {
+  .hero-profile-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .hero-follow-cards-grid {
+    grid-template-columns: 1fr;
+  }
+  .hero-action-dock-row {
+    width: 100%;
+  }
+  .hero-dock-container {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero-avatar-frame {
+    width: 110px;
+    height: 110px;
+  }
+  .hero-name {
+    font-size: 1.4rem;
+  }
+  .hero-status-line {
+    flex-wrap: wrap;
+  }
+  .hero-meta-strip {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .dock-email-button {
+    padding: 5px 8px;
+    font-size: 0.8rem;
+  }
+  .dock-icon-btn {
+    width: 28px;
+    height: 28px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero-avatar-frame {
+    width: 95px;
+    height: 95px;
+  }
+  .hero-dock-container {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+}

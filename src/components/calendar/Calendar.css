@@ -1,0 +1,44 @@
+.calendar-card {
+  margin-top: 24px;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg);
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.calendar-title {
+  font-family: var(--font-ui);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.calendar-username-link {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-tertiary);
+  transition: color var(--duration-fast) ease;
+}
+
+.calendar-username-link:hover {
+  color: var(--accent-blue);
+}
+
+.calendar-wrapper {
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.calendar-wrapper svg {
+  margin: 0 auto;
+}
